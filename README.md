@@ -17,3 +17,7 @@ Source: Kaggle – Marketing Campaign Performance Dataset
 - Each channel accounts for a similar number of campaigns, suggesting a balanced experimental design rather than organic campaign concentration.
 - This allows fair performance comparison across channels without channel bias.
 - These observations were identified during the initial exploratory analysis phase.
+
+## Key Findings
+
+- Facebook delivers the highest average ROI among marketing channels, suggesting stronger return efficiency relative to other platforms.
