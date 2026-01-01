@@ -1,1 +1,6 @@
-
+-- =====================================
+-- File: 02_kpi_calculations.sql
+-- Purpose: Calculate, validate, and derive marketing KPIs
+-- Dataset: Marketing Campaign Performance
+-- Tool: Google BigQuery
+-- =====================================
