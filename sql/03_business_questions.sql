@@ -41,3 +41,29 @@ GROUP BY Channel_Used
 ORDER BY avg_roi, CPC DESC;
 
 -- Insight: ROI and CPC values are relatively consistent across channels, indicating no strong tradeoff between cost efficiency and profitability.
+
+
+-- Q4: Top 3 Marketing Channels per average engagement score
+
+WITH engagement_score_cte AS(
+  SELECT
+    Channel_Used,
+    ROUND(AVG(Engagement_Score),2) AS avg_engagement
+  FROM `marketing_campaign_performance.raw_campaign_data`
+  GROUP BY Channel_Used
+),
+ranking AS(
+  SELECT 
+    *, RANK() OVER(ORDER BY avg_engagement DESC) AS ranking_engagement
+  FROM engagement_score_cte  
+)
+SELECT 
+  Channel_Used,
+  avg_engagement,
+  ranking_engagement
+FROM ranking
+WHERE ranking_engagement <=3;
+
+-- Insight: Website shows the highest average engagement score, followed closely by Facebook. Engagement levels across channels are very similar, with marginal differences.
+
+
