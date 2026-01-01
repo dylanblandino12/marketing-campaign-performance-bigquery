@@ -67,3 +67,14 @@ WHERE ranking_engagement <=3;
 -- Insight: Website shows the highest average engagement score, followed closely by Facebook. Engagement levels across channels are very similar, with marginal differences.
 
 
+-- Q5: Which marketing channel has the highest average click-through rate (CTR)?
+
+
+SELECT
+  Channel_Used,
+  ROUND(AVG(SAFE_DIVIDE(Clicks, Impressions)),2) AS CTR
+FROM `marketing_campaign_performance.raw_campaign_data`
+GROUP BY Channel_Used
+ORDER BY CTR DESC
+
+-- Insight: Average CTR is identical across all marketing channels, indicating no channel-level differentiation in click-through performance.
