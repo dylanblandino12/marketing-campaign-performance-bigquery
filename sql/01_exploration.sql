@@ -42,3 +42,23 @@ FROM marketing_campaign_performance.raw_campaign_data;
 -- repeated measurements over time or across channels.
 
 -- Explore distribution of campaigns by marketing channel
+SELECT
+  Channel_Used,
+  COUNT(*) AS total_campaigns
+FROM marketing_campaign_performance.raw_campaign_data
+GROUP BY Channel_Used
+ORDER BY total_campaigns DESC;
+
+-- Marketing channels are evenly distributed across the dataset.
+
+
+-- Validate presence of zero or null performance metrics
+-- Purpose: Ensure KPI calculations (CTR, CVR, ROAS) are not affected by zero values
+
+SELECT
+  COUNTIF(Impressions = 0) AS zero_impressions,
+  COUNTIF(Clicks = 0) AS zero_clicks,
+  COUNTIF(Conversions = 0) AS zero_conversions
+FROM marketing_campaign_performance.raw_campaign_data;
+
+-- Result: No zero values. Data is clean.
