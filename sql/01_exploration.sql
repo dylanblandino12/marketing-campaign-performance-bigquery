@@ -1,1 +1,6 @@
-
+-- =====================================
+-- File: 01_exploration.sql
+-- Purpose: Perform initial data exploration and validation
+-- Dataset: Marketing Campaign Performance
+-- Tool: Google BigQuery
+-- =====================================
