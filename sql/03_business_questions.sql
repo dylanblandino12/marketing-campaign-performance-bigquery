@@ -4,3 +4,7 @@
 -- Dataset: Marketing Campaign Performance
 -- Tool: Google BigQuery
 -- =====================================
+
+-- Q1: Which marketing channel delivers the highest average ROI?
+
+
