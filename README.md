@@ -24,5 +24,7 @@ Source: Kaggle – Marketing Campaign Performance Dataset
 - Website campaigns are the most cost-efficient in terms of CPC.
 - No strong tradeoff between CPC and ROI was observed across marketing channels, as performance metrics remain relatively consistent.
 - Website and Facebook lead in average engagement score, although differences across channels are marginal.
+- Click-through rate (CTR) is consistent across all channels, suggesting similar user response behavior regardless of channel.
+
 
 
