@@ -1,7 +1,5 @@
 # marketing-campaign-performance-bigquery
 
-# Marketing Campaign Performance Analysis (BigQuery)
-
 SQL-based analysis of marketing campaign performance using Google BigQuery.
 The project focuses on evaluating campaign effectiveness through key marketing KPIs such as ROI, conversion rate, and acquisition cost.
 
@@ -13,5 +11,8 @@ Source: Kaggle – Marketing Campaign Performance Dataset
 - SQL
 - Looker Studio (optional dashboard)
 
-## Project Status
-🚧 In progress
+## Data Exploration Notes
+
+- Marketing channels are evenly distributed across the dataset.
+- Each channel accounts for a similar number of campaigns, suggesting a balanced experimental design rather than organic campaign concentration.
+- This allows fair performance comparison across channels without channel bias.
