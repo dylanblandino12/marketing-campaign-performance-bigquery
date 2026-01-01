@@ -1,0 +1,2 @@
+-- Schema overview
+-- Fact and dimension tables for marketing campaign analytics
