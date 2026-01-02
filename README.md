@@ -26,6 +26,8 @@ Source: Kaggle – Marketing Campaign Performance Dataset
 - Website and Facebook lead in average engagement score, although differences across channels are marginal.
 - Click-through rate (CTR) is consistent across all channels, suggesting similar user response behavior regardless of channel.
 - Google Ads has the highest average acquisition cost, suggesting higher investment requirements compared to other channels.
+- Instagram achieves high ROI but at a higher acquisition cost, highlighting a profitability versus efficiency tradeoff.
+
 
 
 
