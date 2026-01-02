@@ -12,23 +12,38 @@
 
 -- Source table:
 -- raw_campaign_data
--- Description: Raw marketing campaign performance data loaded from Kaggle.
+-- Description: Denormalized marketing campaign performance dataset loaded from Kaggle.
 
--- Fact table:
--- fact_campaign_performance
--- Grain: One record per campaign, channel, and date.
--- Metrics: Clicks, Impressions, Conversion_Rate, Acquisition_Cost, ROI, Engagement_Score
+-- Dataset grain:
+-- One record per marketing campaign.
+-- Each row contains aggregated performance metrics at campaign level.
 
--- Dimension tables:
--- dim_campaign
--- Description: Campaign attributes such as type, audience, duration, and segment.
+-- Metrics available:
+-- Clicks
+-- Impressions
+-- Conversion_Rate
+-- Acquisition_Cost
+-- ROI
+-- Engagement_Score
 
--- dim_channel
--- Description: Marketing execution channel and geographical attributes.
+-- Derived KPIs:
+-- CTR (Clicks / Impressions)
+-- CPC (Acquisition_Cost / Clicks)
+-- ROI-to-Cost Efficiency
 
--- dim_date
--- Description: Calendar attributes derived from campaign date.
+-- Modeling approach:
+-- The dataset was evaluated for normalization into fact and dimension tables.
+-- However, due to its single-grain, denormalized structure, additional physical
+-- modeling was not implemented, as it would not add analytical value for this use case.
+
+-- Instead, KPI logic was modularized using CTEs within analytical queries to
+-- ensure clarity, consistency, and reusability across business questions.
+
+-- Conceptual dimensions (logical only):
+-- Campaign: Campaign_ID, Campaign_Type, Target_Audience
+-- Channel: Channel_Used
+-- Date: Campaign date (not used for time-series analysis)
 
 -- Notes:
--- The dataset was normalized into fact and dimension tables to support
--- scalable analytics and join-based queries in BigQuery.
+-- This approach prioritizes analytical clarity over structural complexity and
+-- reflects common real-world marketing analytics scenarios.
