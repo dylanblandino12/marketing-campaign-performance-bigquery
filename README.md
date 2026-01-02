@@ -28,6 +28,8 @@ Source: Kaggle – Marketing Campaign Performance Dataset
 - Google Ads has the highest average acquisition cost, suggesting higher investment requirements compared to other channels.
 - Instagram achieves high ROI but at a higher acquisition cost, highlighting a profitability versus efficiency tradeoff.
 - Google Ads exhibits the most consistent ROI, suggesting more stable and predictable performance across campaigns.
+- Website offers the strongest balance between return and cost efficiency, generating the highest ROI per unit of acquisition cost.
+
 
 
 
