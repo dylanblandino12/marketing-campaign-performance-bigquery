@@ -78,3 +78,18 @@ GROUP BY Channel_Used
 ORDER BY CTR DESC
 
 -- Insight: Average CTR is identical across all marketing channels, indicating no channel-level differentiation in click-through performance.
+
+
+-- Q6: Which marketing channel has the highest average acquisition cost?
+
+SELECT
+  Channel_Used,
+  ROUND(AVG(Acquisition_Cost),2) AS avg_acq_cost
+FROM `marketing_campaign_performance.raw_campaign_data`
+GROUP BY Channel_Used
+ORDER BY avg_acq_cost DESC
+LIMIT 1;  
+
+-- Insight: Google Ads shows the highest average acquisition cost, indicating higher upfront investment compared to other marketing channels.
+
+
