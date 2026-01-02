@@ -32,6 +32,14 @@ The analysis highlights clear differences in cost efficiency, profitability, and
 - Google Ads exhibits the most consistent ROI, suggesting more stable and predictable performance across campaigns.
 - Website offers the strongest balance between return and cost efficiency, generating the highest ROI per unit of acquisition cost.
 
+## Dashboard (Looker Studio)
+
+An executive dashboard was built using Looker Studio to visualize marketing campaign
+performance across channels. The dashboard highlights key KPIs such as ROI, CPC,
+engagement score, and ROI-to-cost efficiency, supporting data-driven channel
+prioritization decisions.
+
+![Marketing Dashboard](images/dashboard_overview.png)
 
 ### Marketing Channel Recommendation
 
