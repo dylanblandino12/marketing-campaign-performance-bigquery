@@ -118,3 +118,17 @@ ORDER BY roi_inconsistency
 LIMIT 1;
 
 -- Insight: Google Ads shows the most consistent ROI performance, indicating lower variability and more predictable returns across campaigns.
+
+
+-- Q9: Which marketing channel provides the best balance between ROI and cost efficiency?
+
+SELECT 
+  Channel_Used,
+  ROUND(SAFE_DIVIDE(AVG(ROI), AVG(Acquisition_Cost))*100,4) AS roi_cost_efficiency
+FROM `marketing_campaign_performance.raw_campaign_data`
+GROUP BY Channel_Used
+ORDER BY roi_cost_efficiency DESC
+LIMIT 1;
+
+-- Insight: Website provides the best balance between ROI and acquisition cost, delivering the highest ROI per unit of investment.
+
