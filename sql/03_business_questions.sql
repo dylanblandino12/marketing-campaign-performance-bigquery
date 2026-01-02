@@ -15,7 +15,7 @@ GROUP BY Channel_Used
 ORDER BY avg_roi DESC
 LIMIT 1;
 
--- Insight: Facebook delivers the highest average ROI among all channels, indicating stronger return efficiency compared to other platforms.
+-- Insight: Facebook delivers the highest average ROI among all channels, indicating stronger return efficiency compared to other platforms. Website is the second best. 
 
 
 -- Q2: Which marketing channel has the lowest average CPC?
@@ -131,4 +131,23 @@ ORDER BY roi_cost_efficiency DESC
 LIMIT 1;
 
 -- Insight: Website provides the best balance between ROI and acquisition cost, delivering the highest ROI per unit of investment.
+
+-- Q10: Based on ROI, cost efficiency, and consistency, which marketing channel would you recommend prioritizing?
+-- Ran these queries to determine how far was website in comparison to the best channel in these categories.
+SELECT
+  Channel_Used,
+  ROUND(AVG(ROI),2) AS avg_roi
+FROM `marketing_campaign_performance.raw_campaign_data`
+GROUP BY Channel_Used
+ORDER BY avg_roi DESC;
+
+SELECT
+  Channel_Used,
+  ROUND(STDDEV_POP(ROI),2) as roi_inconsistency
+FROM `marketing_campaign_performance.raw_campaign_data`
+GROUP BY Channel_Used
+ORDER BY roi_inconsistency ;
+
+-- Insight: Website is the recommended channel to prioritize.
+-- While it ranks second in average ROI behind Facebook, it delivers the lowest CPC, matches Google Ads in ROI consistency, and provides the strongest balance between ROI and acquisition cost.
 
