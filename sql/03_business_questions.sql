@@ -106,3 +106,15 @@ LIMIT 1;
 
 -- Insight: Instagram shows a high average ROI, but also requires a high acquisition cost, indicating profitability driven by higher investment rather than cost efficiency.
 
+
+-- Q8: Which marketing channel shows the most consistent ROI performance?
+
+SELECT
+  Channel_Used,
+  ROUND(STDDEV_POP(ROI),2) as roi_inconsistency
+FROM `marketing_campaign_performance.raw_campaign_data`
+GROUP BY Channel_Used
+ORDER BY roi_inconsistency 
+LIMIT 1;
+
+-- Insight: Google Ads shows the most consistent ROI performance, indicating lower variability and more predictable returns across campaigns.
