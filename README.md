@@ -25,6 +25,8 @@ Source: Kaggle – Marketing Campaign Performance Dataset
 - No strong tradeoff between CPC and ROI was observed across marketing channels, as performance metrics remain relatively consistent.
 - Website and Facebook lead in average engagement score, although differences across channels are marginal.
 - Click-through rate (CTR) is consistent across all channels, suggesting similar user response behavior regardless of channel.
+- Google Ads has the highest average acquisition cost, suggesting higher investment requirements compared to other channels.
+
 
 
 
