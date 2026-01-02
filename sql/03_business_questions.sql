@@ -93,3 +93,16 @@ LIMIT 1;
 -- Insight: Google Ads shows the highest average acquisition cost, indicating higher upfront investment compared to other marketing channels.
 
 
+-- Q7: Which marketing channel shows the highest average ROI relative to its acquisition cost?
+
+SELECT 
+  Channel_Used,
+  ROUND(AVG(ROI),2) AS avg_roi,
+  ROUND(AVG(Acquisition_Cost), 2) AS avg_acq_cost
+FROM `marketing_campaign_performance.raw_campaign_data`
+GROUP BY Channel_Used
+ORDER BY avg_roi, avg_acq_cost DESC
+LIMIT 1;
+
+-- Insight: Instagram shows a high average ROI, but also requires a high acquisition cost, indicating profitability driven by higher investment rather than cost efficiency.
+
