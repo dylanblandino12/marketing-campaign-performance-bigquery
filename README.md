@@ -42,7 +42,7 @@ prioritization decisions.
 ![Marketing Dashboard](images/dashboard_overview.png)
 
 🔗 **Interactive Dashboard:**  
-[https://lookerstudio.google.com/reporting/XXXXXXXX](https://lookerstudio.google.com/s/qrSJ91cpN40)
+(https://lookerstudio.google.com/s/qrSJ91cpN40)
 
 
 ### Marketing Channel Recommendation
