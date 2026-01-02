@@ -31,6 +31,9 @@ Source: Kaggle – Marketing Campaign Performance Dataset
 - Website offers the strongest balance between return and cost efficiency, generating the highest ROI per unit of acquisition cost.
 
 
+### Marketing Channel Recommendation
+
+Based on the combined analysis of ROI, cost efficiency, and performance consistency, **Website** emerges as the strongest channel to prioritize. Although Facebook leads in average ROI, Website offers the lowest CPC, comparable consistency to Google Ads, and the best balance between ROI and acquisition cost, making it the most efficient and reliable option overall.
 
 
 
